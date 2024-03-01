@@ -149,7 +149,7 @@ Company XYZ, a retail corporation, aims to analyze its sales data to gain insigh
    - `price`: Price per unit of the product.
 
 ### Schema Description (Star Schema)
-![drawSQL-image-export-2024-03-01](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/c45f01b1-0cca-4686-8e1e-c156855f4e5a)
+![drawSQL-image-export-2024-03-01 (1)s](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/0df245d0-c39b-433c-87e5-f824fe566d47)
 
 
 In a star schema design, the fact table (e.g., `fact_sales`) sits at the center, surrounded by dimension tables (e.g., `dim_product`, `dim_store`). This design simplifies queries and enhances performance by denormalizing data.
