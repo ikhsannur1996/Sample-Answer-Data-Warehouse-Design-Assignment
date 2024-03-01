@@ -1,3 +1,7 @@
+# Sample Answer: Data Warehouse Design Assignment
+
+This sample answer refers to the case study provided at [Data-Warehouse-Design-Assignment](https://github.com/ikhsannur1996/Data-Warehouse-Design-Assignment).
+
 # Employee Performance Data Warehouse Design Case Study
 
 ## Introduction
