@@ -42,6 +42,14 @@ In the snowflake schema design:
 - The fact table, `fact_employee_performance`, remains at the center, containing measures or metrics related to employee performance.
 - Dimension tables, such as `dim_department` and `dim_education`, are normalized to reduce redundancy and improve data integrity. However, `dim_employee` is denormalized to include both department and education information directly.
 
+**Snowflake Schema:**
+In a Snowflake schema, data is organized into a centralized fact table surrounded by multiple dimension tables, forming a hierarchical structure. The fact table typically contains transactional or event data at its core, while dimension tables contain descriptive attributes related to the facts.
+
+- **Parents**: The central fact table, in this case, `fact_employee_performance`, likely contains performance metrics or indicators related to employees.
+- **Children Level 1**: The first level of children consists of dimension tables directly related to the employees, such as `dim_employee`, which might contain attributes like employee ID, name, etc.
+- **Children Level 2**: The second level of children includes dimension tables that provide further context about employees, such as `dim_department` containing information about the departments they belong to, and `dim_education` containing details about their educational background.
+
+
 ### Sample Queries: Employee Data Mart Tables
 
 **1. Employee Performance Summary by Department**
@@ -153,6 +161,13 @@ Company XYZ, a retail corporation, aims to analyze its sales data to gain insigh
 
 
 In a star schema design, the fact table (e.g., `fact_sales`) sits at the center, surrounded by dimension tables (e.g., `dim_product`, `dim_store`). This design simplifies queries and enhances performance by denormalizing data.
+
+**Star Schema:**
+In a Star schema, data is organized into a central fact table surrounded by multiple dimension tables, but unlike the Snowflake schema, these dimension tables are not further normalized. Instead, they directly relate to the fact table.
+
+- **Parents**: The central fact table, `fact_sales`, contains transactional data related to sales.
+- **Children**: Dimension tables directly connected to the fact table include `dim_product`, `dim_store`, `dim_time`, and `dim_sales_name`. These dimensions provide details such as product information, store details, time-related attributes, and salesperson details respectively.
+
 
 ### Sample Data Mart Tables: Sales Analysis
 
