@@ -35,8 +35,8 @@ Company XYZ, a large multinational corporation, aims to analyze and improve empl
    - `performance_date`: Date of the performance evaluation.
 
 ### Schema Description (Snowflake Schema)
+![Employee](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/7325ace5-21a1-45a8-8fbf-30236bbf98a2)
 
-![Snowflake Schema](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/f9dd40ef-10fd-4cf1-ac3a-4123c74e3ea7)
 
 In the snowflake schema design:
 - The fact table, `fact_employee_performance`, remains at the center, containing measures or metrics related to employee performance.
@@ -157,7 +157,7 @@ Company XYZ, a retail corporation, aims to analyze its sales data to gain insigh
    - `price`: Price per unit of the product.
 
 ### Schema Description (Star Schema)
-![drawSQL-image-export-2024-03-01 (1)s](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/0df245d0-c39b-433c-87e5-f824fe566d47)
+![Sales](https://github.com/ikhsannur1996/Sample-Answer-Data-Warehouse-Design-Assignment/assets/32507742/c3e005c9-3b9c-4d5e-be21-a4fc2237dad1)
 
 
 In a star schema design, the fact table (e.g., `fact_sales`) sits at the center, surrounded by dimension tables (e.g., `dim_product`, `dim_store`). This design simplifies queries and enhances performance by denormalizing data.
