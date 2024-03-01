@@ -1,4 +1,4 @@
-# Employee Performance Analysis Case Study
+# Employee Performance Data Warehouse Design Case Study
 
 ## Introduction
 
@@ -110,7 +110,7 @@ ORDER BY
 This table presents the trend of average performance scores on a monthly basis, allowing stakeholders to track performance changes over time.
 
 
-## Sales Analysis Case Study
+## Sales Data Warehouse Design Case Study
 
 ### Introduction
 
